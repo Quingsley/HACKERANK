@@ -1,21 +1,30 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
 #include <iostream>
+#include <algorithm>
+#define MAX 10000
 using namespace std;
-int main()
-{
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
     int n;
-    int arr[n];
+    cin >> n;
+    int arr[MAX];
     int j;
-    cout << endl;
-    for(int i=0;i<n;i++)
-        {
-            cin >> arr[i];
-            
-        }
-    cout << endl;
-    for(j=4;j>=0;j--)
-        {
-            
-            cout << arr[j] << " ";
-        }
-    return 0;
+    for (int i = 1; i <= n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    for (j = 0; j < n; j++)
+    {
+
+        cout << arr[n-j] << " ";
+    }
+    return 0; 
+     
+    
 }
+
